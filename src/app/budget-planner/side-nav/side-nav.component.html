@@ -1,0 +1,17 @@
+<div class="navbar">
+    <h2>Plan Budget At Ease</h2>
+</div>
+<div>
+    <div class="toggle-button-row" (click)="toggleSlideOut()">
+        <mat-icon>menu</mat-icon>
+    </div>
+</div>
+<div class="slide-out-pannel" [class.slide-out]="isSlideOut">
+    <div class="slide-out-content">
+        <h5 class="nav">Budget Planner</h5>
+        <p class="edit-col" (click)="onDash()">Dashboard</p>
+        <p class="edit-col" (click)="onProfile()">Profile</p>
+        <p class="edit-col" (click)="onHistory()">History</p>
+        <p class="edit-col" (click)="onLogout()">Logout</p>
+    </div>
+</div>
